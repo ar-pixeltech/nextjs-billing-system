@@ -25,12 +25,13 @@ const items = [
 export default function Home() {
   return (
     <div>
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <div class="col-span-2">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="col-span-2">
           <Menu />
         </div>
+
         <div>
-          <div className=" mt-6 h-full rounded-lg border bg-white p-6 shadow-md md:mt-0">
+          <div className=" mt-6 h-auto rounded-lg border bg-white p-6 shadow-md md:mt-0">
             <CartItem item={items[0]} />
             <CartItem item={items[1]} />
             <CartItem item={items[2]} />

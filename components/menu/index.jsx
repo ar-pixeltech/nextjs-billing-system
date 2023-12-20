@@ -33,8 +33,8 @@ export function Menu() {
                     <h2 className="mb-5 text-2xl font-bold">{cat.categoryName}</h2>
                     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
                         {cat.items.length ?
-                            cat.items.map((item) => (
-                                <ItemCard item={item} />
+                            cat.items.map((item, ind) => (
+                                <ItemCard item={item} key={item.id + ind} />
                             ))
                             :
                             <div>No items</div>

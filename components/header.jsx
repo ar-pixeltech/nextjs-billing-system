@@ -1,4 +1,5 @@
 import { SITE_NAME } from "@/utils";
+import Image from "next/image";
 
 export default function Header() {
     return (
@@ -40,7 +41,7 @@ export default function Header() {
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
-                            <img alt="Smoke in" src="../../images/logo.png" />
+                            <Image alt="Smoke in" width="100" height="100" src="/images/logo.png" />
                         </div>
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
